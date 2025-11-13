@@ -1,0 +1,21 @@
+{
+  "programName": "demo_program",
+  "widgets": [
+    {
+      "type": "video",
+      "localFile": "media/demo.mp4",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "loop": true
+    },
+    {
+      "type": "text",
+      "text": "Xin chào NovaStar!",
+      "x": 100,
+      "y": 900,
+      "fontSize": 48
+    }
+  ]
+}

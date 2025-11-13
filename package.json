@@ -1,0 +1,11 @@
+{
+  "name": "viplex-push",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node viplex-push.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}
