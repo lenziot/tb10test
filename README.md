@@ -1,5 +1,5 @@
 # Overview
-## - Cái gì đây?
+## 1.1 - Cái gì đây?
 - Đây là ứng dụng mini mô phỏng workflow ViPlex, dành cho TB10 Plus / Taurus Series, với các bước chuẩn:
     - Đọc file cấu hình solution.json (chuẩn ViPlex).
     - Đăng nhập vào thiết bị (/terminal/user/login).
@@ -7,7 +7,8 @@
     - Đẩy solution lên (/terminal/core/v1/program).
     - Log lại kết quả từng bước.
 
-## - Cấu trúc
+## 1.2 - Cấu trúc project
+```bash
 viplex-push/
 ├── config/
 │   └── solution.json
@@ -15,9 +16,9 @@ viplex-push/
 │   └── demo.mp4
 ├── viplex-push.js
 ├── package.json
+```
 
-
-## Flow hoạt động
+## 1.3 - Flow hoạt động
 
 1. Đăng nhập và lấy token.
 
