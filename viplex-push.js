@@ -3,7 +3,7 @@ import path from "path";
 import axios from "axios";
 import FormData from "form-data";
 
-const TB_IP = "192.168.1.102";
+const TB_IP = "192.168.8.31";
 const USERNAME = "admin";
 const PASSWORD = "123456";
 const BASE = `http://${TB_IP}/terminal/core/v1`;
@@ -15,9 +15,13 @@ const H = () => ({
 });
 
 // 1 - Login
+// POST /terminal/core/v1/user/login
+// POST /terminal/screen/v1/user/login
+// POST /terminal/user/login
+
 async function login() {
   const { data } = await axios.post(
-    `http://${TB_IP}/terminal/user/login`,
+    `http://${TB_IP}/terminal/core/v1/user/login`,
     { username: USERNAME, password: PASSWORD },
     { headers: { "Content-Type": "application/json" } }
   );
