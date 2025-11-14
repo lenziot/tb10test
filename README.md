@@ -19,13 +19,9 @@ viplex-push/
 ```
 
 ## 1.3 - Flow hoạt động
-
+  
 1. Đăng nhập và lấy token.
-
 2. Kiểm tra chế độ hiện tại → đặt sang async nếu chưa đúng.
-
 3. Upload từng file media từ solution.json → nhận uri thực tế trên TB10.
-
 4. Cập nhật solution.widgets[].uri theo đường dẫn trả về.
-
 5. Gửi solution hoàn chỉnh (POST /program) để TB10 Plus chạy nội dung.
