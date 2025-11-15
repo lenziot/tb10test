@@ -3,7 +3,7 @@ import path from "path";
 import axios from "axios";
 import FormData from "form-data";
 
-const TB_IP = "192.168.8.31";
+const TB_IP = "192.168.8.31:16674";
 const USERNAME = "admin";
 const PASSWORD = "123456";
 const BASE = `http://${TB_IP}/terminal/core/v1`;

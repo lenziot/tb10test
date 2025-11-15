@@ -25,3 +25,21 @@ viplex-push/
 3. Upload từng file media từ solution.json → nhận uri thực tế trên TB10.
 4. Cập nhật solution.widgets[].uri theo đường dẫn trả về.
 5. Gửi solution hoàn chỉnh (POST /program) để TB10 Plus chạy nội dung.
+
+
+
+
+# Đăng nhập để lấy token
+curl -k -sS -X POST "https://192.168.8.31:16674/terminal/core/v1/user/login" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "sn": "MYHA12127W2030017171",
+    "username": "admin",
+    "password": "88888888",
+    "loginType": 2,
+    "clientId": 1,
+    "clientName": "TestClient"
+  }'
+
+# Sau đó dùng token từ response:
+# curl -k -H "Authorization: <TOKEN>" "https://<DEVICE_IP>:16674/terminal/core/v1/screen/brightness"
