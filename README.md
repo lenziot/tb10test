@@ -43,3 +43,31 @@ curl -k -sS -X POST "https://192.168.8.31:16674/terminal/core/v1/user/login" \
 
 # Sau đó dùng token từ response:
 # curl -k -H "Authorization: <TOKEN>" "https://<DEVICE_IP>:16674/terminal/core/v1/screen/brightness"
+
+
+
+# terminal-open api
+
+- User-related
+  - 1.1 - Log in to devices [Post]
+  - 1.2 - Log out of the device [Delete]
+  - 1.3 - Change user information [Put]
+
+- System control-related
+  - 2.1 - Screenshot [Get]
+  - 2.2 - Restart immediately [Post]
+  - 2.3 - Obtain device restart schedules [Get]
+  - 2.4 - Schedule device restarts [Post]
+  - 2.5 - Set time
+  - 2.6 - Install apps
+  - 2.7 - Install apps
+  - 2.8 - Obtain time
+  - 2.9 - Factory reset
+  - 2.10 - Obtain terminal info 
+  - 2.11 - Obtain volume
+  - 2.12 - Set volume
+  - 2.13 - Upgrade the device
+  - 2.14 - Check local 
+
+- 
+
